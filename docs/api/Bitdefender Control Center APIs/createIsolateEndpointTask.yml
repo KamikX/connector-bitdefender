@@ -1,0 +1,26 @@
+info:
+  name: createIsolateEndpointTask
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: https://cloudgz.gravityzone.bitdefender.com/api/v1.0/jsonrpc/incidents
+  body:
+    type: json
+    data: |-
+      {
+          "id": "6389c7bd273518b30107f3ce",
+          "jsonrpc": "2.0",
+          "method": "createIsolateEndpointTask",
+          "params": {
+              "endpointId": "6a85928c33aac84b34aea461"
+          }
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

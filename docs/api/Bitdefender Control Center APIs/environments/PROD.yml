@@ -1,0 +1,5 @@
+name: PROD
+variables:
+  - secret: true
+    name: TOKEN
+    description: 'treba vytvorit cez: `echo "TOKEN:"| base64` dvojbodka je klucova'
